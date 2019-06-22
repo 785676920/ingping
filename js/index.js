@@ -63,4 +63,38 @@ window.onload = function(){
 			$(".header-t3-3 ul").stop().animate({marginTop:0},500)
 		})
 	}
+	//商品列表页 鼠标划上商品时 图片抖动
+	Shake();
+	function Shake(){
+		$(".Left-part-2,.Right-part").find("a").bind({
+			mouseenter : function(){
+				$(this).find("img").stop().animate({right:14},200)	
+			},
+			mouseleave : function(){
+				$(this).find("img").stop().animate({right:8},200)	
+			}
+		})
+	}
+	//猜你喜欢页 鼠标划上商品时 图片抖动
+	guess();
+	function guess(){
+		$(".guess-you").find("li").bind({
+			mouseenter : function(){
+				$(this).find("img").stop().animate({marginRight:10},200);	
+				$(this).find("p").css("color","#f60")
+			},
+			mouseleave : function(){
+				$(this).find("img").stop().animate({marginRight:0},200);
+				$(this).find("p").css("color","");
+			}
+		})
+	}
+	//换一批
+	 Change();
+	function Change(){
+		$(".change").click(function(){
+			$(".guess-you").find("ul").eq(0).toggle()
+			$(".guess-you").find("ul").eq(1).toggle()
+		})
+	}
 }
