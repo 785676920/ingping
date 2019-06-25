@@ -97,4 +97,100 @@ window.onload = function(){
 			$(".guess-you").find("ul").eq(1).toggle()
 		})
 	}
+	//二级菜单的显示和隐藏
+	My();
+	function My(){
+		//顶部导航
+		$(".nav-top1").children("li").eq(0).on({
+			mouseenter : function(){
+				$(".wodeyinping").show()					
+			},
+			mouseleave : function(){
+				$(".wodeyinping").hide()					
+			}
+		})
+		$(".nav-top1").children("li").eq(3).on({
+			mouseenter : function(){
+				$(".kefu1").show()					
+			},
+			mouseleave : function(){
+				$(".kefu1").hide()					
+			}
+		})
+		//侧边栏
+		$(".sidebar1").find("li").eq(1).on({
+			mouseenter : function(){
+				var top = $(this).offset().top
+				$(".kefu2").show()	
+			},
+			mouseleave : function(){
+				$(".kefu2").hide()					
+			}
+		})
+		$(".sidebar1").find("li").eq(0).on({
+			mouseenter : function(){
+				var top = $(this).offset().top
+				$(".wode").show()	
+			},
+			mouseleave : function(){
+				$(".wode").hide()					
+			}
+		})
+		$(".saoyisao").on({
+			mouseenter : function(){				
+				$(".saoyisao1").show()	
+			},
+			mouseleave : function(){
+				$(".saoyisao1").hide()					
+			}
+		})
+	}
+	//选项卡效果
+	information();
+	function information(){
+		$(".Header-information-1").find("li").mouseenter(function(){
+			$(this).addClass("ac").siblings().removeClass("ac")	
+			var $index = $(this).index()
+			$(".Header-information-2").children("ol").eq($index).css("display","block").siblings().css("display","none")
+		})
+	}
+	//回到顶部
+	window.onscroll = function(){
+		var stop = document.body.scrollTop || document.documentElement.scrollTop;
+		if( stop > 100 ){
+			$(".to-top").show();
+			$(".to-top").css("bottom",0);
+			$(".saoyisao").css("bottom",40)
+			
+			//两侧边栏回到顶部功能
+			$(".to-top").click(function(){
+				document.body.scrollTop = document.documentElement.scrollTop = 0
+			})
+			$(".Stairs").find("h4").click(function(){
+				document.body.scrollTop = document.documentElement.scrollTop = 0
+			})
+			
+		}else if(stop < 100){
+			$(".to-top").hide();
+			$(".to-top").css("bottom",40);
+			$(".saoyisao").css("bottom",0)
+		}
+		if( stop > 500 ){			
+			$(".Stairs").slideDown(300)	
+		}else if( stop < 500 ){
+			$(".Stairs").slideUp(200)			
+		}		
+	}
+	louti();
+	function louti(){
+		var flag = true;
+		$(".Stairs").find("dd").click(function(){
+			var $index = $(this).index()
+			var $t = $(".Head-Title").eq($index).offset().top
+			$("body,html").animate( { scrollTop:$t },1000 ,function(){
+				flag = true;
+			});
+			$(this).addClass("ac2").siblings().removeClass("ac2")
+		})	
+	}
 }

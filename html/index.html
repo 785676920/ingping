@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>音平商城-大型正品音乐设备网购商城</title>
 		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="../tubiao/iconfont.css"/>
 	</head>
 	<body>
@@ -15,17 +16,26 @@
 				<h5>
 					<span>您好 ! 欢迎来到音平商城 ! </span>
 					<span>
-						[<a href="#">请登录</a>丨<a href="#">免费注册</a>]
+						[<a href="login.html">请登录</a>丨<a href="register.html">免费注册</a>]
 					</span>
 				</h5>
-				<ul>
+				<ul class="nav-top1">
 					<li>
 						<i class="iconfont icon-wode"></i>
 						<a href="#">我的音平 ∨</a>
+						<div class="wodeyinping" style="display:none ;">
+							<dl>
+								<dd>账号管理</dd>
+								<dd>我的订单</dd>
+								<dd>我的收藏</dd>
+								<dd>我要评价</dd>
+								<dd>我的卡卷 <span>0</span></dd>
+							</dl>
+						</div>
 					</li>
 					<li>
 						<i class="iconfont icon-appwaimai"></i>
-						<a href="#">我的购物车</a>
+						<a href="#">我的购物车<span>0</span></a>
 					</li>
 					<li>
 						<i class="iconfont icon-zhangdan"></i>
@@ -34,8 +44,25 @@
 					<li>
 						<img src="../img/2.gif"/>
 						<a href="#">客服服务 ∨</a>
+						<div class="kefufuwu kefu1" style="display: none;">
+							<div class="kefufuwu1">
+								<img src="../img/ingge-1.0.1.png"/>
+								<h6>在线客服</h6>
+								<p>在线时间 : 08:30 - 23:00</p>
+							</div>
+							<div class="kefufuwu2">
+								<i class="iconfont icon-wodekefu" id="i1"></i>
+								<h4>400 700 3638</h4>
+								<p>服务时间 : 08:30 - 23:00</p>
+							</div>
+							<div class="kefufuwu3">
+								<img src="../img/wechat-icon-1.0.0.png" class="img-1"/>
+								<p>微信客服<br/>扫一扫</p>
+								<img src="../img/wechatqr-1.0.0.jpg" class="img-2"/>
+							</div>
+						</div>						
 					</li>
-				</ul>
+				</ul>				
 			</div>
 		</div>
 		<!--头部-->
@@ -61,7 +88,7 @@
 					<div class="header-t3">
 						<!--二级导航-->
 						<h3><span>全部商品分类</span>
-							<ul style="z-index: 9999;">
+							<ul style="z-index: 9999; display: block;">
 								<li>
 									<p>
 										<a href="#">声卡</a>
@@ -193,7 +220,7 @@
 			<div class="Header-information">
 				<div class="Header-information-1">
 					<ul>
-						<li>公告</li>
+						<li class="ac">公告</li>
 						<li>资讯</li>
 						<li>下载</li>
 						<li>技术</li>
@@ -207,6 +234,30 @@
 						<li>【活动】焕新初夏 满额送 领劵减</li>
 						<li>【活动】五一放价 与乐同行 大牌特价</li>
 						<li>【活动】好货放肆购 全场满额+1元换好礼</li>
+					</ol>
+					<ol style="display: none;">
+						<li>十年前的迷笛不插电，痛仰最伟大的摇滚现场</li>
+						<li>中国有嘻哈过去两年 ，有人事业飞黄腾达，有人却被抓进去了</li>
+						<li>罗德 TF-5 高品质小振膜话筒即将发售，国内售价已确定</li>
+						<li>最甜的粤语民谣，就是她 -“牛牛”刘莉旻</li>
+						<li>唱歌五音不全怎么办？你和网红主播，差距可能只是一个调音师而已</li>
+						<li>国漫国产剧电影崛起的时代，如何做好方言配音？</li>
+					</ol>
+					<ol style="display: none;">
+						<li>ICON Cube 4Nano官方版驱动免费下载，支持win7/8/10系统</li>
+						<li>ICON AIO6 iMap官方版驱动免费下载，支持iMac、Windows系统</li>
+						<li>福利：来自 Nimble Tools 的 Misstortion 2 免费失真插件</li>
+						<li>多款单块建模的吉他效果器插件，ToneLib GFX免费下载</li>
+						<li>玛雅（ESI）MAYA DuaFire官方驱动免费下载（Windows7/8、WIN10、XP系统）</li>
+						<li>艾肯ICON AIO6 驱动免费下载（Mac、Windows7/8、WIN10系统）</li>
+					</ol>
+					<ol style="display: none;">
+						<li>录音需要哪些设备？为什么需要专业声卡？专业录音棚老师这样说</li>
+						<li>纽曼Neumann U87AI和U89AI 两款高品质电容麦克风的区别</li>
+						<li>如何使用合成器制作鼓音色？底鼓军鼓通鼓都能制作！</li>
+						<li>怎么做好影视动漫配音？做到这7点，你将进步飞快！</li>
+						<li>K歌麦克风和专业麦克风怎么选？有什么区别？</li>
+						<li>雅马哈AG03和UR242怎么选？专业评测对比两款声卡，看看哪个适合你！</li>
 					</ol>
 				</div>
 				<div class="Header-information-3">
@@ -250,56 +301,76 @@
 					</h3>
 					<ul>
 						<li>
-							<img src="../img/e (1).jpg"/>
-							<p>纽曼(Neumann)德国进口 U87Ai 电容式录音麦克风</p>
-							<h4>¥22999.00</h4>
+							<a href="page.html?id=shop01">
+								<img src="../img/e (1).jpg"/>
+								<p>纽曼(Neumann)德国进口 U87Ai 电容式录音麦克风</p>
+								<h4>¥22999.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/e (2).jpg"/>
-							<p>舒尔(SHURE)SM58s 动圈式出色人声话筒</p>
-							<h4>¥699.00</h4>
+							<a href="page.html?id=shop02">
+								<img src="../img/e (2).jpg"/>
+								<p>舒尔(SHURE)SM58s 动圈式出色人声话筒</p>
+								<h4>¥699.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/e (5).jpg"/>
-							<p>爱科技(AKG)C3000 电容式大振膜录音麦克风</p>
-							<h4>¥1588.00</h4>
+							<a href="page.html?id=shop03">
+								<img src="../img/e (5).jpg"/>
+								<p>爱科技(AKG)C3000 电容式大振膜录音麦克风</p>
+								<h4>¥1588.00</h4>
+							</a>	
 						</li>
 						<li>
-							<img src="../img/e (4).jpg"/>
-							<p>艾肯(iCON)CUBE 4Nano VST电脑录音K歌外置声卡</p>
-							<h4>¥1499.00</h4>
+							<a href="page.html?id=shop04">
+								<img src="../img/e (4).jpg"/>
+								<p>艾肯(iCON)CUBE 4Nano VST电脑录音K歌外置声卡</p>
+								<h4>¥1499.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/e (3).jpg"/>
-							<p>艾肯(iCON)MicU VST电脑K歌外置USB声卡</p>
-							<h4>¥999.00</h4>
+							<a href="page.html?id=shop05">
+								<img src="../img/e (3).jpg"/>
+								<p>艾肯(iCON)MicU VST电脑K歌外置USB声卡</p>
+								<h4>¥999.00</h4>
+							</a>
 						</li>
 					</ul>
 					<ul style="display: none;">
 						<li>
-							<img src="../img/h (2).jpg"/>
-							<p>客所思(XOX)KX-2 究极版 电脑K歌USB声卡</p>
-							<h4>¥279.00</h4>
+							<a href="page.html?id=shop06">
+								<img src="../img/h (2).jpg"/>
+								<p>客所思(XOX)KX-2 究极版 电脑K歌USB声卡</p>
+								<h4>¥279.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/h (5).jpg"/>
-							<p>雅马哈(YAMAHA)印尼进口 HS8 8寸有源监听音箱 黑色 （只）</p>
-							<h4>¥2479.00</h4>
+							<a href="page.html?id=shop07">
+								<img src="../img/h (5).jpg"/>
+								<p>雅马哈(YAMAHA)印尼进口 HS8 8寸有源监听音箱 黑色 （只）</p>
+								<h4>¥2479.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/h (1).jpg"/>
-							<p>雅马哈(YAMAHA)MG16XU 16路带效果器模拟 专业调音台</p>
-							<h4>¥3199.00</h4>
+							<a href="page.html?id=shop08">
+								<img src="../img/h (1).jpg"/>
+								<p>雅马哈(YAMAHA)MG16XU 16路带效果器模拟 专业调音台</p>
+								<h4>¥3199.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/h (4).jpg"/>
-							<p>雅马哈(steinberg)UR242 USB专业录音网络K歌声卡</p>
-							<h4>¥1618.00</h4>
+							<a href="page.html?id=shop09">
+								<img src="../img/h (4).jpg"/>
+								<p>雅马哈(steinberg)UR242 USB专业录音网络K歌声卡</p>
+								<h4>¥1618.00</h4>
+							</a>
 						</li>
 						<li>
-							<img src="../img/h (3).jpg"/>
-							<p>RMEBabyface Pro 电脑录音网络K歌USB声卡 娃娃脸声卡专业录音主播直播</p>
-							<h4>¥5549.00</h4>
+							<a href="page.html?id=shop10">
+								<img src="../img/h (3).jpg"/>
+								<p>RMEBabyface Pro 电脑录音网络K歌USB声卡 娃娃脸声卡专业录音主播直播</p>
+								<h4>¥5549.00</h4>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -320,11 +391,11 @@
 					
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/f (1).jpg" style="position: inherit;"/></a>
-							<a href="#"><img src="../img/f (2).jpg" style="position: inherit;"/></a>							
+							<a href="page.html?id=shop11"><img src="../img/f (1).jpg" style="position: inherit;"/></a>
+							<a href="page.html?id=shop12"><img src="../img/f (2).jpg" style="position: inherit;"/></a>							
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-1">
+							<a href="page.html?id=shop13" class="Left-part-2-1">
 								<div class="minPart">
 									<h4>套装立省295元</h4>
 									<h3 style="font-size: 18px;">演播室级录音套装</h3>
@@ -332,7 +403,7 @@
 								</div>
 								<img src="../img/f (3).jpg"/>
 							</a>							
-							<a href="#" class="Left-part-2-2">
+							<a href="page.html?id=shop14" class="Left-part-2-2">
 								<div class="minPart">
 									<h4>限时立减156元 操作简单快速</h4>
 									<h3 style="font-size: 18px;">网红主播热捧套装</h3>
@@ -340,7 +411,7 @@
 								</div>
 								<img src="../img/f (5).jpg"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop15" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>品牌保障 主播优选</h4>
 									<h3>雅马哈AG03声卡调音台</h3>
@@ -350,19 +421,19 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop16" class="Right-part-1">
 								<div class="minPart">
-									<h4>品牌保障 主播优选</h4>
-									<h3>雅马哈AG03声卡调音台</h3>
-									<h5>¥1288.00</h5>									
+									<h4>出色红卡 丰富酷炫音效</h4>
+									<h3>艾肯 MOBILE·U VST 声卡</h3>
+									<h5>¥1388.00</h5>									
 								</div>
 								<img src="../img/f (4).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop17" class="Right-part-2">
 								<div class="minPart">
-									<h4>品牌保障 主播优选</h4>
-									<h3>雅马哈AG03声卡调音台</h3>
-									<h5>¥1288.00</h5>									
+									<h4>入门级编曲MIDI键盘</h4>
+									<h3>罗兰 A-49 MIDI键盘</h3>
+									<h5>¥1579.00</h5>									
 								</div>
 								<img src="../img/f (7).jpg"/>									
 							</a>
@@ -393,10 +464,10 @@
 				<div class="recording-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/z (0).jpg"/></a>													
+							<a href="page.html?id=shop18"><img src="../img/z (0).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop19" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>颜值与性能兼具 操作简单</h4>
 									<h3 style="font-size: 18px;">性价比录音配置</h3>
@@ -404,7 +475,7 @@
 								</div>
 								<img src="../img/z (1).jpg"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop20" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>中高频增益 声音温暖</h4>
 									<h3>爱科技C214电容麦克风</h3>
@@ -412,7 +483,7 @@
 								</div>
 								<img src="../img/z (5).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop21" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>通道多 性能强 声音无失真</h4>
 									<h3 style="font-size: 18px;">中小型录音室高配优选</h3>
@@ -420,7 +491,7 @@
 								</div>
 								<img src="../img/z (6).jpg"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop22" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>钢琴手感 即插即用</h4>
 									<h3>美奥多Oxygen88键盘</h3>
@@ -430,7 +501,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop23" class="Right-part-1">
 								<div class="minPart">
 									<h4>声音层次感强 配备独立功放</h4>
 									<h3>JBL NANL K5音箱</h3>
@@ -438,7 +509,7 @@
 								</div>
 								<img src="../img/z (3).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop24" class="Right-part-2">
 								<div class="minPart">
 									<h4>超强性能 德国进口 录音标配</h4>
 									<h3>REM UCX专业录音声卡</h3>
@@ -489,10 +560,10 @@
 				<div class="anchor-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/y (1).jpg"/></a>													
+							<a href="page.html?id=shop25"><img src="../img/y (1).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop26" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>颜值与实力并存</h4>
 									<h3 style="font-size: 18px;">粉丝暴涨神器</h3>
@@ -500,7 +571,7 @@
 								</div>
 								<img src="../img/y (6).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop27" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>灵敏度高 声音纯净</h4>
 									<h3>舒尔 PGA27电容麦克风</h3>
@@ -508,7 +579,7 @@
 								</div>
 								<img src="../img/y (3).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop28" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>性能稳定 高品质多音效</h4>
 									<h3 style="font-size: 18px;">主播必备推荐套装</h3>
@@ -516,7 +587,7 @@
 								</div>
 								<img src="../img/y (2).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop29" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>便携小巧 超强性能</h4>
 									<h3>RME Babtface Pro 声卡</h3>
@@ -526,7 +597,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop30" class="Right-part-1">
 								<div class="minPart">
 									<h4>内置DSP效果器 零延迟监听</h4>
 									<h3>雅马哈 UR242 声卡</h3>
@@ -534,7 +605,7 @@
 								</div>
 								<img src="../img/y (4).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop31" class="Right-part-2">
 								<div class="minPart">
 									<h4>限时立减100元</h4>
 									<h3>爱科技C3000 麦克风</h3>
@@ -582,10 +653,10 @@
 				<div class="sound-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/x (5).jpg"/></a>													
+							<a href="page.html?id=shop32"><img src="../img/x (5).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop33" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>功能众多 噪音低 便携</h4>
 									<h3 style="font-size: 18px;">小型户外演出套装</h3>
@@ -593,7 +664,7 @@
 								</div>
 								<img src="../img/x (2).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop34" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>15寸有源 大功率 带压缩器</h4>
 									<h3>山逊Auro X15D舞台音箱</h3>
@@ -601,7 +672,7 @@
 								</div>
 								<img src="../img/x (3).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop35" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>灵活性强 音色细腻自然</h4>
 									<h3 style="font-size: 18px;">户外演出手机直播套装</h3>
@@ -609,7 +680,7 @@
 								</div>
 								<img src="../img/x (6).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop36" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>16路 模拟效果器 幻象电源供电</h4>
 									<h3>雅马哈MG16XU调音台</h3>
@@ -619,7 +690,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop37" class="Right-part-1">
 								<div class="minPart">
 									<h4>再现清晰人声 抗干扰稳定性强</h4>
 									<h3>舒尔 PGX24A/SM86话筒</h3>
@@ -627,7 +698,7 @@
 								</div>
 								<img src="../img/x (1).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop38" class="Right-part-2">
 								<div class="minPart">
 									<h4>数字效果清晰及细致 适用现场</h4>
 									<h3>TC ElectronicM2000</h3>
@@ -678,10 +749,10 @@
 				<div class="family-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/w (0).jpg"/></a>													
+							<a href="page.html?id=shop39"><img src="../img/w (0).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop40" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>云端下载 手机点歌</h4>
 									<h3 style="font-size: 18px;">BMB品牌KTV套装</h3>
@@ -689,7 +760,7 @@
 								</div>
 								<img src="../img/w (1).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop41" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>支持4K高清 智能点歌</h4>
 									<h3>雷克云十二plus点歌机</h3>
@@ -697,7 +768,7 @@
 								</div>
 								<img src="../img/w (4).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop42" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>性能高 演唱人声饱满</h4>
 									<h3 style="font-size: 18px;">JBL品牌KTV套装</h3>
@@ -705,7 +776,7 @@
 								</div>
 								<img src="../img/w (2).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop43" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>满足电影、k歌双重需求</h4>
 									<h3>天逸AD-9313EHD功放</h3>
@@ -715,7 +786,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop44" class="Right-part-1">
 								<div class="minPart">
 									<h4>为小型娱乐场所提供更多便利</h4>
 									<h3>音王KV-V320 点歌机</h3>
@@ -723,7 +794,7 @@
 								</div>
 								<img src="../img/w (5).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop45" class="Right-part-2">
 								<div class="minPart">
 									<h4>旗舰级 专业卡拉OK</h4>
 									<h3>先锋 CS-X100音箱</h3>
@@ -774,10 +845,10 @@
 				<div class="guitar-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/v (1).jpg"/></a>													
+							<a href="page.html?id=shop46"><img src="../img/v (1).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop47" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>稳定、易于使用、耐用、价格经济</h4>
 									<h3 style="font-size: 18px;">TAMA IP52KH6帝王之星</h3>
@@ -785,7 +856,7 @@
 								</div>
 								<img src="../img/v (2).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop48" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>枫木指板 手感好 性价比高</h4>
 									<h3>芬达0133002327电吉他 </h3>
@@ -793,7 +864,7 @@
 								</div>
 								<img src="../img/v (7).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop49" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>61键 考级用琴 插U盘</h4>
 									<h3 style="font-size: 18px;">雅马哈KB-290电子琴</h3>
@@ -801,7 +872,7 @@
 								</div>
 								<img src="../img/v (6).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop50" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>26寸单板云杉 配送包</h4>
 									<h3>TomTUT-680M尤克里里 </h3>
@@ -811,7 +882,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop51" class="Right-part-1">
 								<div class="minPart">
 									<h4>键盘控制器 简单快捷</h4>
 									<h3>诺维逊launchpadMKⅡ控制器</h3>
@@ -819,7 +890,7 @@
 								</div>
 								<img src="../img/v (4).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop52" class="Right-part-2">
 								<div class="minPart">
 									<h4>逼真脚踏钹系统 高性能音源 可连IOS</h4>
 									<h3>雅马哈DTX532K电子鼓</h3>
@@ -870,10 +941,10 @@
 				<div class="other-c">
 					<div class="whole">
 						<div class="Left-part-1">
-							<a href="#"><img src="../img/u (1).jpg"/></a>													
+							<a href="page.html?id=shop53"><img src="../img/u (1).jpg"/></a>													
 						</div>
 						<div class="Left-part-2">
-							<a href="#" class="Left-part-2-2" style="background: #f1fff0">
+							<a href="page.html?id=shop54" class="Left-part-2-2" style="background: #f1fff0">
 								<div class="minPart">									
 									<h4>声场宽阔 抗干扰 防啸叫</h4>
 									<h3 style="font-size: 18px;">得胜 多媒体会议套装</h3>
@@ -881,7 +952,7 @@
 								</div>
 								<img src="../img/u (6).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop55" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>鹅颈式无线 一拖二 高传真音质</h4>
 									<h3>咪宝ACT-300会议麦克风</h3>
@@ -889,7 +960,7 @@
 								</div>
 								<img src="../img/u (3).jpg"/>									
 							</a>							
-							<a href="#" class="Left-part-2-2" style="background: #fff5eb;">
+							<a href="page.html?id=shop56" class="Left-part-2-2" style="background: #fff5eb;">
 								<div class="minPart">
 									<h4>全方位环绕音质组合</h4>
 									<h3 style="font-size: 18px;">JBL 家庭影院套装</h3>
@@ -897,7 +968,7 @@
 								</div>
 								<img src="../img/u (2).png"/>									
 							</a>
-							<a href="#" class="Left-part-2-3">
+							<a href="page.html?id=shop57" class="Left-part-2-3">
 								<div class="minPart">
 									<h4>便携式 可换咪头 同期6轨录音</h4>
 									<h3>ZOOM H6数字录音机</h3>
@@ -907,7 +978,7 @@
 							</a>																						
 						</div>
 						<div class="Right-part">
-							<a href="#" class="Right-part-1">
+							<a href="page.html?id=shop58" class="Right-part-1">
 								<div class="minPart">
 									<h4>耳放/前级切换功能 可立式摆放</h4>
 									<h3>旷世CMA400i解码器</h3>
@@ -915,7 +986,7 @@
 								</div>
 								<img src="../img/u (4).jpg"/>									
 							</a>						
-							<a href="#" class="Right-part-2">
+							<a href="page.html?id=shop59" class="Right-part-2">
 								<div class="minPart">
 									<h4>低音强劲 丰富细腻的声音</h4>
 									<h3>舒尔 SE215 HI-FI耳塞</h3>
@@ -947,7 +1018,7 @@
 				<div class="drying">
 					<h3 class="Head-Title">
 						<i class="iconfont icon-wodelicai"></i>
-						<b>其他应用</b>					
+						<b>最新晒单</b>					
 					</h3>					
 				</div>
 				<!--最新晒单内容-->
@@ -1052,6 +1123,20 @@
 				</div>
 			</div>
 		</div>
+		<!--楼梯-->
+		<div class="Stairs" style="display:none ;">
+			<dl>
+				<dt>导航</dt>
+				<dd>录音编曲</dd>
+				<dd>网络主播</dd>
+				<dd>演出音响</dd>
+				<dd>家庭KTV</dd>
+				<dd>吉他乐器</dd>
+				<dd>其他应用</dd>
+				<dd>最新晒单</dd>
+				<h4><p>∧</p>顶部</h4>
+			</dl>
+		</div>
 		<!--底部-->
 		<div id="footer">
 			<!--飘带-->
@@ -1152,9 +1237,68 @@
 					</p>
 				</div>
 			</div>
+			<!--侧边gif-->
 			<div id="dog">
 				<img src="../img/kefu-1.0.1.gif"/>
 			</div>
+			<!--侧边栏-->
+			<div id="sidebar">
+				<div class="sidebar1">
+					<ul>
+						<li><i class="iconfont icon-tongxunlu"></i>
+							<div class="wode" style="display: none;">
+								<span class="sjx"></span>
+								<div class="wode1">
+									<span></span>
+									<p>用户名:</p>
+									<h4>级别:</h4>
+								</div>
+								<div class="wode2">
+									<h3></h3>
+									<p>我的订单</p>
+									<h4>我的收藏</h4>
+								</div>
+							</div>
+						</li>
+						<li><i class="iconfont icon-wodekefu"></i>
+							<div class="kefufuwu kefu2" style="display: none;">
+								<div class="kefufuwu1">
+									<span class="sjx"></span>
+									<img src="../img/ingge-1.0.1.png"/>
+									<h6>在线客服</h6>
+									<p>在线时间 : 08:30 - 23:00</p>
+								</div>
+								<div class="kefufuwu2">
+									<i class="iconfont icon-wodekefu" id="i2"></i>
+									<h4>400 700 3638</h4>
+									<p>服务时间 : 08:30 - 23:00</p>
+								</div>
+								<div class="kefufuwu3">
+									<img src="../img/wechat-icon-1.0.0.png" class="img-1"/>
+									<p>微信客服<br/>扫一扫</p>
+									<img src="../img/wechatqr-1.0.0.jpg" class="img-2"/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i class="iconfont icon-appwaimai"></i>
+							<div class="sidebar2">购物车</div>
+							<span>0</span>
+						</li>
+						<li><i class="iconfont icon-huilvhuansuan"></i></li>
+						<li><i class="iconfont icon-gengduo"></i></li>
+					</ul>
+				</div>
+				<div class="saoyisao">
+					<i class="iconfont icon-saoyisao"></i>
+					<div class="saoyisao1" style="display: none;">
+						<span class="sjx"></span>
+						<img src="../img/weixin_code_145-1.0.1.jpg"/>
+					</div>
+				</div>
+				<div class="to-top" style="display: none;"><i class="iconfont icon-gupiao"></i></div>
+			</div>
+			
 		</div>
 	</body>
 </html>

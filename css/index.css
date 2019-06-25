@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 70px;
       line-height: 70px; }
 
-.Layout, .nav .nav-top, .header .header-t, #center .center, #footer .ribbon .ribbon1, #footer .explain .explain1, #footer .info .info1 {
+.Layout, #center .center {
   width: 1200px;
   margin: 0 auto; }
 
@@ -140,156 +140,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
   background: url(../img/1.jpg) no-repeat #18D2F9 center; }
 
-.nav {
-  height: 36px;
-  background: #FCFCFC; }
-  .nav .nav-top {
-    height: 36px; }
-    .nav .nav-top h5 {
-      font-size: 12px;
-      float: left;
-      line-height: 36px;
-      color: #666; }
-      .nav .nav-top h5 a {
-        color: #f60;
-        padding: 8px 5px; }
-    .nav .nav-top ul {
-      float: right; }
-      .nav .nav-top ul li {
-        font-size: 12px;
-        float: left;
-        padding: 12px 19px 8px;
-        border-right: 1px solid #FCFCFC;
-        border-left: 1px solid #FCFCFC; }
-        .nav .nav-top ul li:hover {
-          border-right: 1px solid #eaeaea;
-          border-left: 1px solid #eaeaea; }
-        .nav .nav-top ul li:hover a {
-          color: #f60; }
-        .nav .nav-top ul li a {
-          color: #333; }
-        .nav .nav-top ul li i {
-          font-size: 14px !important;
-          margin-right: 4px; }
-        .nav .nav-top ul li img {
-          margin-right: 4px;
-          margin-top: -6px; }
-
-.header {
-  margin-top: 20px;
-  height: 140px;
-  background: #fff; }
-  .header .header-t {
-    height: 160px;
-    background: #fff; }
-    .header .header-t .header-t1 {
-      height: 100px; }
-      .header .header-t .header-t1 input {
-        outline: none;
-        border-width: 0; }
-      .header .header-t .header-t1 .text1 {
-        height: 32px;
-        width: 458px;
-        padding-left: 10px;
-        border: 2px solid #f60; }
-      .header .header-t .header-t1 .btn1 {
-        height: 36px;
-        width: 86px;
-        background: #f60;
-        color: #fff;
-        font-size: 16px;
-        position: absolute;
-        top: 176px; }
-      .header .header-t .header-t1 .img1 {
-        height: 40px;
-        float: right;
-        margin-top: 18px; }
-      .header .header-t .header-t1 ol {
-        float: left;
-        padding-left: 410px;
-        margin-top: -12px; }
-        .header .header-t .header-t1 ol li {
-          float: left;
-          font-size: 12px;
-          margin-right: 10px;
-          color: #666; }
-          .header .header-t .header-t1 ol li img {
-            margin: -6px 0 0 2px; }
-          .header .header-t .header-t1 ol li:hover {
-            color: #f60; }
-    .header .header-t .header-t2 {
-      position: relative;
-      height: 40px; }
-      .header .header-t .header-t2 .header-t3 {
-        width: 210px;
-        float: left; }
-        .header .header-t .header-t2 .header-t3 h3 {
-          font-size: 14px;
-          width: 210px;
-          background: #f60;
-          color: #fff;
-          display: inline-block; }
-          .header .header-t .header-t2 .header-t3 h3 span {
-            display: inline-block;
-            margin: 10px 0 10px 15px; }
-          .header .header-t .header-t2 .header-t3 h3 ul {
-            position: absolute;
-            width: 210px;
-            height: 450px;
-            background: rgba(50, 50, 50, 0.9); }
-            .header .header-t .header-t2 .header-t3 h3 ul li {
-              padding: 10px 0 10px 15px;
-              border-bottom: 1px solid #555; }
-              .header .header-t .header-t2 .header-t3 h3 ul li:hover {
-                background: #fff; }
-              .header .header-t .header-t2 .header-t3 h3 ul li:hover p a {
-                color: #555; }
-              .header .header-t .header-t2 .header-t3 h3 ul li p {
-                margin-bottom: 4px; }
-              .header .header-t .header-t2 .header-t3 h3 ul li p a {
-                color: #fff;
-                font-size: 14px; }
-                .header .header-t .header-t2 .header-t3 h3 ul li p a:hover {
-                  color: #f60; }
-              .header .header-t .header-t2 .header-t3 h3 ul li h4 a {
-                color: #999;
-                font-size: 12px; }
-                .header .header-t .header-t2 .header-t3 h3 ul li h4 a:hover {
-                  color: #f60; }
-      .header .header-t .header-t2 .header-t3-2 {
-        float: left; }
-        .header .header-t .header-t2 .header-t3-2 ul li {
-          float: left;
-          height: 40px;
-          line-height: 40px;
-          margin-left: 50px;
-          font-size: 14px;
-          font-weight: 700; }
-          .header .header-t .header-t2 .header-t3-2 ul li:hover {
-            color: #f60; }
-      .header .header-t .header-t2 .header-t3-3 {
-        float: right;
-        height: 40px;
-        width: 224px;
-        overflow: hidden; }
-        .header .header-t .header-t2 .header-t3-3 ul {
-          margin-right: 10px; }
-        .header .header-t .header-t2 .header-t3-3 span {
-          font-size: 10px;
-          position: absolute;
-          color: #8b8b8b;
-          height: 12px;
-          width: 12px;
-          text-align: center;
-          cursor: pointer; }
-          .header .header-t .header-t2 .header-t3-3 span:hover {
-            color: #f60; }
-        .header .header-t .header-t2 .header-t3-3 .s1 {
-          top: 6px;
-          right: 10px; }
-        .header .header-t .header-t2 .header-t3-3 .s2 {
-          top: 16px;
-          right: 10px; }
+.ac {
+  color: #f60;
+  border-bottom: 3px solid #f60;
+  box-sizing: border-box; }
 
 .banner {
   height: 450px;
@@ -299,9 +153,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 450px; }
     .banner .banner1 li {
       position: absolute;
-      width: 100%; }
-      .banner .banner1 li img {
-        margin-left: 370px; }
+      width: 100%;
+      text-align: center; }
   .banner .banner2 {
     position: absolute;
     top: 430px;
@@ -319,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 220px;
     background: #fff;
     position: absolute;
-    right: 159px;
+    right: 155px;
     top: 0;
     z-index: 9; }
     .banner .Header-information .Header-information-1 {
@@ -332,14 +185,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 22px;
         height: 38px;
         line-height: 38px; }
-        .banner .Header-information .Header-information-1 ul li:hover {
-          color: #f60;
-          border-bottom: 3px solid #f60;
-          box-sizing: border-box; }
-      .banner .Header-information .Header-information-1 ul li:nth-child(1) {
-        color: #f60;
-        border-bottom: 3px solid #f60;
-        box-sizing: border-box; }
     .banner .Header-information .Header-information-2 ol {
       padding: 10px 15px; }
       .banner .Header-information .Header-information-2 ol li {
@@ -411,6 +256,8 @@ h1, h2, h3, h4, h5, h6 {
           font-weight: normal; }
           #center .center .guess-you h3 span b:hover {
             color: #f60; }
+    #center .center .guess-you a {
+      color: #000; }
     #center .center .guess-you ul li {
       float: left;
       width: 206px;
@@ -500,6 +347,8 @@ h1, h2, h3, h4, h5, h6 {
           height: 34px;
           font-size: 12px;
           overflow: hidden; }
+          #center .center .drying-c ul li p:hover {
+            color: #f60; }
         #center .center .drying-c ul li a {
           display: block;
           margin: 15px;
@@ -517,6 +366,8 @@ h1, h2, h3, h4, h5, h6 {
             padding-top: 10px;
             line-height: 18px;
             overflow: hidden; }
+            #center .center .drying-c ul li a h5:hover {
+              color: #f60; }
         #center .center .drying-c ul li h6 {
           font-size: 12px;
           color: #999;
@@ -558,109 +409,38 @@ h1, h2, h3, h4, h5, h6 {
             float: right; }
       #center .center .information-c ul li:nth-child(5) {
         margin: 0; }
+      #center .center .information-c ul li:hover p {
+        color: #f60; }
 
-#footer {
-  height: 100%;
-  background: #999; }
-  #footer .ribbon {
-    height: 65px;
-    background: #f60; }
-    #footer .ribbon .ribbon1 {
-      height: 65px; }
-      #footer .ribbon .ribbon1 ul li {
-        float: left;
-        font-size: 18px;
-        font-weight: 700;
-        height: 65px;
-        line-height: 65px;
-        width: 20%;
-        text-align: center; }
-        #footer .ribbon .ribbon1 ul li span {
-          margin-left: 10px;
-          color: #fff; }
-  #footer .explain {
-    height: 257px;
-    background: #fff; }
-    #footer .explain .explain1 dl {
-      float: left;
-      width: 13%;
-      padding: 40px 0; }
-      #footer .explain .explain1 dl dt {
-        font-size: 16px;
-        font-weight: 700;
-        color: #333333;
-        padding-bottom: 10px; }
-      #footer .explain .explain1 dl dd {
-        font-size: 12px;
-        line-height: 24px; }
-        #footer .explain .explain1 dl dd a {
-          color: #333; }
-    #footer .explain .explain1 .kefu {
-      float: right;
-      width: 22%;
-      position: relative; }
-      #footer .explain .explain1 .kefu img {
-        width: 130px;
-        position: absolute;
-        top: 20px;
-        left: 20px; }
-      #footer .explain .explain1 .kefu h3 {
-        color: #666;
-        font-size: 18px;
-        position: absolute;
-        right: 0;
-        top: 84px; }
-      #footer .explain .explain1 .kefu h4 {
-        color: #f60;
-        font-size: 30px;
-        position: absolute;
-        right: 0;
-        top: 110px; }
-      #footer .explain .explain1 .kefu h5 {
-        color: #666;
-        font-size: 12px;
-        position: absolute;
-        right: 0;
-        top: 150px; }
-      #footer .explain .explain1 .kefu a {
-        position: absolute;
-        top: 170px;
-        right: 0;
-        padding: 5px 35px;
-        border: 1px solid #f60;
-        color: #f60;
-        font-size: 12px;
-        border-radius: 6px; }
-  #footer .info {
-    height: 200px;
-    background: #333; }
-    #footer .info .info1 {
-      height: 159px; }
-      #footer .info .info1 h3 {
-        font-size: 16px;
-        color: #fff;
-        font-weight: 700;
-        padding: 20px 0; }
-      #footer .info .info1 p {
-        font-size: 12px;
-        color: #a4a4a4;
-        line-height: 22px; }
-        #footer .info .info1 p a {
-          color: #a4a4a4;
-          margin-left: 5px; }
-      #footer .info .info1 ol {
-        height: 40px;
-        margin: 10px 0; }
-        #footer .info .info1 ol li {
-          float: left;
-          margin-right: 15px; }
-  #footer #dog {
-    position: fixed;
-    left: 89%;
-    top: 80%;
-    margin-top: -16px;
-    z-index: 99999; }
-    #footer #dog img {
-      width: 94px; }
+.ac2 {
+  background: #f60 !important; }
+
+.Stairs {
+  position: fixed;
+  width: 40px;
+  height: 365px;
+  bottom: 50px;
+  left: 110px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer; }
+  .Stairs dt {
+    padding: 8px 4px;
+    text-align: center;
+    background: #f60;
+    font-size: 14px;
+    margin-bottom: 1px; }
+  .Stairs dd {
+    background: #666;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 1px; }
+    .Stairs dd:hover {
+      background: #f60; }
+  .Stairs h4 {
+    text-align: center;
+    background: #666; }
+    .Stairs h4:hover {
+      background: #f60; }
 
 /*# sourceMappingURL=index.css.map */
