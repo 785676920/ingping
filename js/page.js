@@ -48,5 +48,89 @@ function ajax(){
 				break;
 			}
 		}
+		
 	})
+}
+//加入购物车
+Shop();
+function Shop(){
+	$(".btn2").click(function(){
+		//点击加入购物车时 动态生成商品图片 运动至购物车时删除
+		var img = $(".big").html()
+		var $div = $("<div>")
+		var $p = $(this).offset()
+		var $p1 = $(".sidebar1").find("li").eq(2).offset()
+		$div.addClass("active").css({"left":$p.left,"top":$p.top})
+		$div.animate({left:$p1.left-50,top:$p1.top},1000,function(){
+			$div.remove()
+		})
+		$div.append(img)
+		$div.appendTo("body")
+		
+		//点击加入购物车时 将商品数据存入至storage
+		var str = location.href
+		var id = str.split("?")[1].split("=")[1]
+		var arr = []
+		var flag = true
+		var json = {
+			"id":id,
+			"ck":"",
+			"count":1
+		}
+		var str = localStorage.getItem("shop")
+		if( str != null ){
+			arr = JSON.parse(str)
+			for( var i = 0 ; i < arr.length ; i++ ){
+				if( arr[i].id == json.id ){
+					arr[i].count++
+					flag = false
+					break;
+				}
+			}
+		}
+		if( flag ){
+			arr.push(json);
+		}
+		localStorage.setItem("shop",JSON.stringify(arr))
+		Num();//调用函数改变购物车数量
+	})
+	$(".btn1").click(function(){
+		var str = location.href
+		var id = str.split("?")[1].split("=")[1]
+		var arr = []
+		var flag = true
+		var json = {
+			"id":id,
+			"ck":"checked",
+			"count":1
+		}
+		var str = localStorage.getItem("shop")
+		if( str != null ){
+			arr = JSON.parse(str)
+			for( var i = 0 ; i < arr.length ; i++ ){
+				if( arr[i].id == json.id ){
+					arr[i].count++
+					flag = false
+					break;
+				}
+			}
+		}
+		if( flag ){
+			arr.push(json);
+		}
+		localStorage.setItem("shop",JSON.stringify(arr))
+		Num();//调用函数改变购物车数量
+		location.href = "shop.html"
+	})
+}
+//显示购物车商品数量
+Num();
+function Num(){
+	var num = 0
+	var str = localStorage.getItem("shop")
+	var arr = JSON.parse(str)
+	for( var i = 0 ; i < arr.length ; i++ ){
+		num+=arr[i].count
+	}
+	$(".span-m").html(num)
 }

@@ -1,0 +1,189 @@
+body {
+  height: 100%; }
+
+.center {
+  height: 100%;
+  min-height: 600px; }
+  .center .center1 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .center .center1 .header {
+      height: 100px; }
+    .center .center1 .quan h4 {
+      font-size: 16px;
+      color: #e4393c;
+      font-weight: 700;
+      margin-bottom: 6px; }
+      .center .center1 .quan h4 span {
+        margin-left: 10px; }
+    .center .center1 .commodity {
+      background: #fcfcfc;
+      margin-bottom: 10px; }
+      .center .center1 .commodity ul {
+        border: 1px solid #eaeaea;
+        height: 42px; }
+        .center .center1 .commodity ul li {
+          float: left;
+          line-height: 42px;
+          font-size: 13px;
+          color: #666; }
+        .center .center1 .commodity ul li:nth-child(1) {
+          margin-left: 20px; }
+          .center .center1 .commodity ul li:nth-child(1) .btns {
+            margin-right: 20px; }
+        .center .center1 .commodity ul li:nth-child(2) {
+          margin-left: 100px; }
+        .center .center1 .commodity ul li:nth-child(3) {
+          margin-left: 380px; }
+        .center .center1 .commodity ul li:nth-child(4) {
+          margin-left: 100px; }
+        .center .center1 .commodity ul li:nth-child(5) {
+          margin-left: 100px; }
+        .center .center1 .commodity ul li:nth-child(6) {
+          margin-left: 100px; }
+      .center .center1 .commodity .com1 {
+        position: relative;
+        padding: 10px 0 10px 20px; }
+        .center .center1 .commodity .com1 img {
+          width: 80px; }
+        .center .center1 .commodity .com1 p {
+          position: absolute;
+          font-size: 14px;
+          color: #333;
+          top: 40px;
+          left: 140px;
+          width: 410px; }
+        .center .center1 .commodity .com1 h3 {
+          position: absolute;
+          font-size: 14px;
+          font-weight: 700;
+          color: #333;
+          top: 40px;
+          left: 590px; }
+        .center .center1 .commodity .com1 h4 {
+          position: absolute;
+          font-size: 14px;
+          color: #333;
+          top: 40px;
+          left: 715px; }
+          .center .center1 .commodity .com1 h4 span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #666;
+            text-align: center;
+            cursor: pointer; }
+          .center .center1 .commodity .com1 h4 .num {
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #666;
+            border-right: 0;
+            border-left: 0; }
+        .center .center1 .commodity .com1 h5 {
+          position: absolute;
+          font-size: 14px;
+          font-weight: 700;
+          color: #f60;
+          top: 40px;
+          left: 866px; }
+        .center .center1 .commodity .com1 .btn-remove {
+          position: absolute;
+          font-size: 13px;
+          color: #333;
+          top: 40px;
+          left: 1014px;
+          border-width: 0;
+          background: #fcfcfc;
+          outline: none; }
+          .center .center1 .commodity .com1 .btn-remove:hover {
+            color: #f60; }
+      .center .center1 .commodity .caozuo {
+        position: relative;
+        height: 75px;
+        border: 1px solid #eaeaea; }
+        .center .center1 .commodity .caozuo .caozuo1 {
+          border-right: 1px solid #eaeaea;
+          width: 700px;
+          height: 75px;
+          position: absolute; }
+          .center .center1 .commodity .caozuo .caozuo1 h3 {
+            position: absolute;
+            font-size: 12px;
+            top: 30px;
+            left: 20px; }
+          .center .center1 .commodity .caozuo .caozuo1 h4 {
+            position: absolute;
+            font-size: 12px;
+            color: 333;
+            top: 30px;
+            left: 80px;
+            cursor: pointer; }
+          .center .center1 .commodity .caozuo .caozuo1 p {
+            position: absolute;
+            font-size: 12px;
+            color: 333;
+            top: 16px;
+            left: 580px; }
+          .center .center1 .commodity .caozuo .caozuo1 h5 {
+            position: absolute;
+            font-size: 12px;
+            color: 333;
+            top: 40px;
+            left: 580px; }
+        .center .center1 .commodity .caozuo .caozuo2 {
+          border-right: 1px solid #eaeaea;
+          width: 160px;
+          height: 75px;
+          position: absolute;
+          left: 700px; }
+          .center .center1 .commodity .caozuo .caozuo2 p {
+            font-size: 12px;
+            color: #333;
+            position: absolute;
+            top: 20px;
+            left: 40px; }
+          .center .center1 .commodity .caozuo .caozuo2 h4 {
+            font-size: 16px;
+            color: #f60;
+            position: absolute;
+            top: 40px;
+            left: 40px; }
+        .center .center1 .commodity .caozuo .caozuo3 {
+          border-right: 1px solid #eaeaea;
+          width: 160px;
+          height: 75px;
+          position: absolute;
+          left: 900px; }
+          .center .center1 .commodity .caozuo .caozuo3 p {
+            font-size: 12px;
+            color: #333;
+            position: absolute;
+            top: 20px; }
+          .center .center1 .commodity .caozuo .caozuo3 h4 {
+            font-size: 16px;
+            color: #f60;
+            position: absolute;
+            top: 40px; }
+        .center .center1 .commodity .caozuo .caozuo4 {
+          background: #e50007;
+          width: 160px;
+          height: 75px;
+          position: absolute;
+          right: 0px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 18px;
+          color: #fff; }
+
+.span-1 {
+  font-size: 16px;
+  color: #f60;
+  padding: 0 3px; }
+
+.span-2 {
+  padding: 0 5px; }
+
+/*# sourceMappingURL=shop.css.map */

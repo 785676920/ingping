@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="../tubiao/iconfont.css"/>		
+	</head>
+	<body>
+		<div class="nav">
+			<div class="nav-top">
+				<h5 id="User">
+					<span>您好 ! 欢迎来到音平商城 ! </span>
+					<span>
+						[<a href="#">请登录</a>丨<a href="#">免费注册</a>]
+					</span>
+				</h5>
+				<ul class="nav-top1">
+					<li>
+						<i class="iconfont icon-wode"></i>
+						<a href="#">我的音平 ∨</a>
+						<div class="wodeyinping" style="display:none ;">
+							<dl>
+								<dd>账号管理</dd>
+								<dd>我的订单</dd>
+								<dd>我的收藏</dd>
+								<dd>我要评价</dd>
+								<dd>我的卡卷 <span>0</span></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont icon-appwaimai"></i>
+						<a href="#">我的购物车<span class="span-m">0</span></a>
+					</li>
+					<li>
+						<i class="iconfont icon-zhangdan"></i>
+						<a href="#">企业采购</a>
+					</li>
+					<li>
+						<img src="../img/2.gif"/>
+						<a href="#">客服服务 ∨</a>
+						<div class="kefufuwu kefu1" style="display: none;">
+							<div class="kefufuwu1">
+								<img src="../img/ingge-1.0.1.png"/>
+								<h6>在线客服</h6>
+								<p>在线时间 : 08:30 - 23:00</p>
+							</div>
+							<div class="kefufuwu2">
+								<i class="iconfont icon-wodekefu" id="i1"></i>
+								<h4>400 700 3638</h4>
+								<p>服务时间 : 08:30 - 23:00</p>
+							</div>
+							<div class="kefufuwu3">
+								<img src="../img/wechat-icon-1.0.0.png" class="img-1"/>
+								<p>微信客服<br/>扫一扫</p>
+								<img src="../img/wechatqr-1.0.0.jpg" class="img-2"/>
+							</div>
+						</div>						
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div class="center">
+			<div class="center1">
+				<div class="header">
+					<a href="index.html"><img src="../img/logo.png"></a>
+				</div>
+				<div class="quan">
+					<h4>全部商品<span class="span-m">0</span></h4>
+				</div>
+				<div class="commodity">
+					<ul>
+						<li><input type="checkbox" class="cks"/>全选</li>
+						<li>商品信息</li>
+						<li>单价(元)</li>
+						<li>数量</li>
+						<li>总价(元)</li>
+						<li>操作</li>
+					</ul>
+					<div id="com1">
+						<!--<div class="com1">
+							<input type="checkbox" class="ck" />
+							<img src="../img/${res[attr].src}"/>
+							<p>${res[attr].Title}</p>
+							<h3>¥<span class="xj">${res[attr].money}</span></h3>
+							<h4><span class="reduce">-</span><span class="num" pid=${arr[i].id}>${arr[i].count}</span><span class="plus">+</span></h4>
+							<h5>¥<span class="num1">${arr[i].count*res[attr].money}</span></h5>	
+							<input type="button"value="删除" class="btn-remove"/>
+						</div>	-->								
+					</div>
+					<div class="caozuo">
+						<div class="caozuo1">
+							<h3><input type="checkbox" class="cks1"/>全选</h3>
+							<h4 class="removes">删除选中商品</h4>
+							<p>已经选购商品<span class="span-1">0</span>件</p>
+							<h5>总计金额:<span class="span-2">0.00</span>元</h5>							
+						</div>
+						<div class="caozuo2">
+							<p>优惠金额</p>
+							<h4>¥<span>0.00</span></h4>
+						</div>
+						<div class="caozuo3">
+							<p>订单金额（不含运费）</p>
+							<h4>¥ <span>0.00</span></h4>
+						</div>
+						<div class="caozuo4">
+							去结算
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer">			
+			<div class="info">
+				<div class="info1">
+					<h3>音平商城 一 大型正品音乐设备网购商城</h3>
+					<p>增值电信业务经营许可证： 粤B2-20110237 / 粤ICP备11032710号-1 / 粤公网安备 44130202000152号 </p>
+					<p>© 2011-2019 音平公司版权所有，并保留所有权利（著作权及商标声明）。 特聘律师团：广东斯明律师事务所</p>
+					<ol>
+						<li><img src="../img/bz_gshd-1.0.2.png" /></li>
+						<li><img src="../img/bz_sfdw-1.0.2.png" /></li>
+						<li><img src="../img/bz_smrz-1.0.2.png" /></li>
+					</ol>
+					<p>友情链接:
+						<a href="#">音平资讯</a>
+						<a href="#">超级音雄</a>						
+						<a href="#">艾肯声卡</a>						
+						<a href="#">音师傅</a>						
+						<a href="#">海外代购</a>
+						<a href="#">返利网</a>
+						<a href="#">白京商城</a>						
+						<a href="#">太阳镜</a>						
+						<a href="#">返利网</a>						
+						<a href="#">结婚钻戒</a>	
+						<a href="#">返利</a>
+						<a href="#">字画书法</a>						
+						<a href="#">258</a>						
+						<a href="#">直线导轨</a>						
+						<a href="#">电子商务平台</a>	
+						<a href="#">张玉堂翡翠</a>	
+					</p>
+				</div>
+			</div>
+			<!--侧边gif-->
+			<div id="dog">
+				<img src="../img/kefu-1.0.1.gif"/>
+			</div>
+			<!--侧边栏-->
+			<div id="sidebar">
+				<div class="sidebar1">
+					<ul>
+						<li><i class="iconfont icon-tongxunlu"></i>
+							<div class="wode" style="display: none;">
+								<span class="sjx"></span>
+								<div class="wode1">
+									<span></span>
+									<p>用户名:</p>
+									<h4>级别:</h4>
+								</div>
+								<div class="wode2">
+									<h3></h3>
+									<p>我的订单</p>
+									<h4>我的收藏</h4>
+								</div>
+							</div>
+						</li>
+						<li><i class="iconfont icon-wodekefu"></i>
+							<div class="kefufuwu kefu2" style="display: none;">
+								<div class="kefufuwu1">
+									<span class="sjx"></span>
+									<img src="../img/ingge-1.0.1.png"/>
+									<h6>在线客服</h6>
+									<p>在线时间 : 08:30 - 23:00</p>
+								</div>
+								<div class="kefufuwu2">
+									<i class="iconfont icon-wodekefu" id="i2"></i>
+									<h4>400 700 3638</h4>
+									<p>服务时间 : 08:30 - 23:00</p>
+								</div>
+								<div class="kefufuwu3">
+									<img src="../img/wechat-icon-1.0.0.png" class="img-1"/>
+									<p>微信客服<br/>扫一扫</p>
+									<img src="../img/wechatqr-1.0.0.jpg" class="img-2"/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i class="iconfont icon-appwaimai"></i>
+							<div class="sidebar2">购物车</div>
+							<span class="span-m">0</span>
+						</li>
+						<li><i class="iconfont icon-huilvhuansuan"></i></li>
+						<li><i class="iconfont icon-gengduo"></i></li>
+					</ul>
+				</div>
+				<div class="saoyisao">
+					<i class="iconfont icon-saoyisao"></i>
+					<div class="saoyisao1" style="display: none;">
+						<span class="sjx"></span>
+						<img src="../img/weixin_code_145-1.0.1.jpg"/>
+					</div>
+				</div>
+				<div class="to-top" style="display: none;"><i class="iconfont icon-gupiao"></i></div>
+			</div>			
+		</div>
+	</body>
+</html>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/shop.js"></script>

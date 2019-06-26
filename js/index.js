@@ -1,4 +1,20 @@
 window.onload = function(){
+	//判断是否有cookie 
+	Cook();
+	function Cook(){
+		var cook = document.cookie
+		if( cook ){
+			var json = JSON.parse(cook.split("=")[1])
+			var str = `<span>欢迎您,</span><span class="User">${json.name}</span>[<a href="login.html">退出</a>]`
+			$("#User").html(str)
+		}
+	}
+	
+	/*//点击购物车
+	$(".sidebar2").click(function(){		
+		$("#sidebar").animate({right:200},1000)
+	})*/
+	
 	//轮播图
 	banner();
 	function banner(){
@@ -154,6 +170,20 @@ window.onload = function(){
 			$(".Header-information-2").children("ol").eq($index).css("display","block").siblings().css("display","none")
 		})
 	}
+	//显示购物车商品数量
+	Num();
+	function Num(){
+		var num = 0
+		var str = localStorage.getItem("shop")
+		if( str == null ){
+			return;
+		}
+		var arr = JSON.parse(str)
+		for( var i = 0 ; i < arr.length ; i++ ){
+			num+=arr[i].count
+		}
+		$(".span-m").html(num)
+	}
 	//回到顶部
 	window.onscroll = function(){
 		var stop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -180,7 +210,8 @@ window.onload = function(){
 		}else if( stop < 500 ){
 			$(".Stairs").slideUp(200)			
 		}		
-	}
+	};
+	
 	louti();
 	function louti(){
 		var flag = true;
@@ -191,6 +222,15 @@ window.onload = function(){
 				flag = true;
 			});
 			$(this).addClass("ac2").siblings().removeClass("ac2")
-		})	
+		})
+		$(window).scroll(function(){
+			if( flag ){
+				let sTop = $(document).scrollTop();
+				let $floor = $(".Left-part-2").filter(function(){
+					return  Math.abs($(this).offset().top - sTop) < $(this).height()/2;
+				})
+			}
+		})
 	}
+	
 }
