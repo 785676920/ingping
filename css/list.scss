@@ -1,0 +1,360 @@
+#center{
+    min-height: 600px;
+    .center1{
+        width: 1200px;
+        min-height: 500px;
+        margin: 0 auto;
+        position: relative;        
+    }
+}
+.title-x{
+    font-size: 12px;
+    color: #999;
+    padding-bottom: 10px;
+    a{
+        color: #999;
+    }
+    .Nextspan{
+        padding:0 6px ;
+    }
+}
+.title-1{
+    font-size: 16px;
+    color: #f60;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 5px;
+    background: #f5f5f5;
+    font-weight: 700;
+    span{
+        padding-left: 20px;
+    }
+}
+.classification{
+    position: relative;
+    .money-x{
+        margin-top: 20px;
+        height: 34px;
+        line-height: 34px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        dt{
+            float: left;
+            font-size: 12px;
+            color: #333;
+            margin:0 70px 0 10px;
+        }
+        dd{
+            float: left;
+            font-size: 12px;
+            color: #38d;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+    }
+    input{
+        width: 42px;
+        height: 21px;
+        box-sizing: border-box;
+        border: 1px solid #CCC;
+        outline: none;
+    }
+    .x-replay-text1{
+        position: absolute;
+        top: 8px;
+        left: 374px;
+    }
+    .x-replay-text2{
+        position: absolute;
+        top: 8px;
+        left: 440px;
+    }
+    .gan{
+        position: absolute;
+        top: 8px;
+        left: 421px; 
+        color: #ccc;
+    }
+    .qued{
+        display: inline-block;
+        width: 42px;
+        height: 21px;
+        line-height: 21px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 12px;
+        color: #333;
+        position: absolute;
+        top: 8px;
+        left: 490px;
+        cursor: pointer;
+        &:hover{
+            background: #e6e6e6;
+        }
+    }
+}
+.Best-Sellers{
+    background: #f2f2f2;
+    height: 160px;
+    margin-top: 20px;
+    position: relative;
+    .rmtj{
+        position: absolute;
+        width: 60px;
+        top: 0;
+        left: 54px;
+    }
+    ul{
+        li{
+            float: left;
+            position: relative;
+            width: 300px;
+            height: 140px;
+            background: #fff;
+            margin: 10px 40px 0 0;
+            img{
+                width: 96px;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
+            p{
+                font-size: 12px;
+                color: 333;
+                width: 164px;
+                height: 35px;
+                overflow: hidden;
+                position: absolute;
+                top: 20px;
+                left: 120px;
+                &:hover{
+                    color: #f60;
+                }
+            }
+            h3{
+                font-size: 18px;
+                color: #f60;
+                position: absolute;
+                top: 60px;
+                left: 120px;
+            }
+            a{
+                position: absolute;
+                font-size: 12px;
+                color: #fff;
+                background: #f60;
+                padding: 5px 8px;
+                top: 95px;
+                left: 120px;
+            }
+        }
+        li:nth-child(1){
+            margin-left: 160px;
+        }
+    }
+}
+#nav{
+    position: relative;
+    height: 100%;
+    h6{
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
+}
+.Sell-well{
+    width: 200px;
+    height: 520px;
+    margin-top: 20px;
+    float: left;
+    ul{
+        border: 1px solid #E8E8E8;
+        h2{
+            font-size: 14px;
+            line-height: 38px;
+            background: #f7f7f7;
+            padding-left: 10px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+        li{
+            position: relative;
+            border-bottom: 1px solid #E8E8E8;
+            img{
+                width: 72px;
+                padding: 10px 5px;
+            }
+            p{
+                font-size: 12px;
+                color: 333;
+                width: 98px;
+                height: 35px;
+                overflow: hidden;
+                position: absolute;
+                top: 10px;
+                left: 80px;
+                color: #333;
+                &:hover{
+                    color: #f60;
+                }
+            }
+            h3{
+                font-size: 14px;
+                color: #f60;
+                position: absolute;
+                top: 60px;
+                left: 80px;
+            }
+        }
+    }
+}
+.Cant-find{
+    background: #fffef0;
+    border: 1px solid #f8e7c6;
+    width: 82%;
+    position: absolute;
+    padding: 30px 0;
+    .Caution{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 50%;
+        background: #f60;
+        position: absolute;
+        left: 10px;
+    }
+    h4{
+        margin-left: 40px;
+    }
+    span{
+        color: #9b9a96;
+    }
+    .Caution1{
+        color: #f66;
+        padding:0 5px;
+    }
+}
+.List-of-Goods{
+    margin-top: 20px;
+    width: 82%;
+    height: 100%;
+    float: right;
+    ul{
+        li{
+            position: relative;
+            margin: 2px;
+            float: left;
+            width: 242px;
+            background: #fff; 
+            border:1px solid #fff;
+            box-sizing: border-box;
+            box-shadow: 0 0 2px 2px #fff;
+            &:hover{ 
+                border: 1px solid #e9e9e9; 
+                box-shadow: 0 0 2px 2px #f8f8f8;             
+            }          
+            img{
+                width: 220px;
+                padding:10px;
+            }
+            h3{
+                font-size: 16px;
+                color: #f60;
+                padding:10px;
+                span{
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #333;
+                height: 36px;
+                line-height: 20px;
+                padding:0 10px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                &:hover{
+                    color: #f60;
+                }
+            }
+            .x-alltime{
+                position: relative;
+                margin-bottom: 20px;
+                .Number-1{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #dbdbdb;
+                    box-sizing: border-box;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #333;
+                    margin-left: 10px;
+                }
+                .up{
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #dbdbdb;
+                    font-size: 10px;
+                    position: absolute; 
+                    top: 0px;
+                    left: 44px;
+                    line-height: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .down{
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #dbdbdb;
+                    font-size: 10px; 
+                    position: absolute; 
+                    top: 17px;
+                    left: 44px;
+                    line-height: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .btn2{
+                    position: absolute;
+                    left: 64px;
+                    outline: none;
+                    width: 100px;
+                    height: 30px;
+                    background: #f60;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 30px;
+                    border-width: 0;
+                    font-size: 13px;
+                    border-radius: 4px;
+                }
+                .Collection{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    width: 60px;
+                    height: 30px;
+                    border: 1px solid #dbdbdb;
+                    box-sizing: border-box;                 
+                    color: #333;
+                    line-height: 30px;
+                    span{
+                        font-size: 26px;
+                        padding-left: 4px;
+                    }
+                    h2{
+                        position: absolute;
+                        top: 0px;
+                        left: 26px; 
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

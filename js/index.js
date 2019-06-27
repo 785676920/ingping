@@ -9,12 +9,7 @@ window.onload = function(){
 			$("#User").html(str)
 		}
 	}
-	
-	/*//点击购物车
-	$(".sidebar2").click(function(){		
-		$("#sidebar").animate({right:200},1000)
-	})*/
-	
+
 	//轮播图
 	banner();
 	function banner(){
@@ -77,6 +72,16 @@ window.onload = function(){
 			$(".header-t3-3 ul li:last").prependTo(".header-t3-3 ul")
 			$(".header-t3-3 ul").css("margin-top",-$h);
 			$(".header-t3-3 ul").stop().animate({marginTop:0},500)
+		})
+	}
+	//搜索时跳转
+	sou();
+	function sou(){
+		$(".btn1").click(function(){
+			if( $(".text1").val() ){
+				location.href = "list.html"
+				localStorage.setItem("Search",$(".text1").val())				
+			}
 		})
 	}
 	//商品列表页 鼠标划上商品时 图片抖动
@@ -183,6 +188,101 @@ window.onload = function(){
 			num+=arr[i].count
 		}
 		$(".span-m").html(num)
+	}
+	//购物车运动 移入移出
+	Shopmove();
+	function Shopmove(){
+		$(".sidebar2").click(function(){
+			if( $("#sidebar").position().left > 1300 ){
+				$("#sidebar").animate({right:300},500)
+			}else{
+				$("#sidebar").animate({right:0},500)
+			}
+		})
+		$(".no").click(function(){
+			$("#sidebar").animate({right:0},500)
+		})
+	}
+	export
+	//侧边栏购物车内显示添加至购物车的商品
+	Show();
+	function Show(){
+		var str = localStorage.getItem("shop")
+		if( str == null ){
+			return;
+		}
+		var arr = JSON.parse(str)
+		var str1 = ""
+		var deff = $.ajax({
+			type:"get",
+			url:"data.json",
+			async:true
+		});
+		deff.done(function(res){
+			for( var i = 0 ; i < arr.length ; i++ ){
+				for( var attr in res ){
+					if( arr[i].id == res[attr].id ){
+						str1+=`<div class="shopCart_box">
+							<input type="checkbox" class="ck2"/>
+							<img src="../img/${res[attr].src}"/>
+							<p pid=${arr[i].id} >${res[attr].Title}</p>
+							<h4>¥<span class="ss1">${res[attr].money}</span></h4>
+							<h5>${arr[i].count}</h5>
+						</div>`
+						break;
+					}
+				}
+			}
+			$(".list").append(str1)
+			//跳转至购物车时 判断商品选择状态
+			$(".shopa").click(function(){
+				$(".ck2:checked").each(function(){
+					var id = $(this).parent().find("p").attr("pid")
+					for( var i = 0 ; i < arr.length ; i++ ){
+						if( arr[i].id == id ){
+							arr[i].ck = "checked"
+							localStorage.setItem("shop",JSON.stringify(arr))
+							break
+						}
+					}
+				})
+			})
+		})
+	}
+	//购物车功能实现
+	shopfn();
+	function shopfn(){
+		//全选效果
+		$(".ck2s").click(function(){
+			$(".ck2").prop("checked",$(".ck2s").prop("checked"))
+			Color();//改变背景色
+			Settlement1();//结算
+		})
+		$(".list").on("click",".ck2",function(){
+			Color();//改变背景色			
+			Settlement1();//调用结算函数
+		})
+		//结算功能
+		function Settlement1(){
+			var m = 0 //总数量
+			var n = 0 //总价格
+			$(".ck2:checked").each(function(){
+				m+=Number($(this).parent().find(".ss1").html())
+				n+=Number($(this).parent().find("h5").html())
+			})
+			$(".sp2").html(n)
+			$(".sp4").html(m)
+		}			
+		//根据商品复选框状态改变背景色		
+		function Color(){
+			$(".ck2").each(function(){
+				if( $(this).prop("checked") ){
+					$(this).parent().css("background","#FFFBF0")
+				}else{
+					$(this).parent().css("background","#FFF")
+				}
+			})
+		}
 	}
 	//回到顶部
 	window.onscroll = function(){

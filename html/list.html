@@ -2,18 +2,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>商品详情</title>
-		<link rel="stylesheet" type="text/css" href="../css/page.css"/>
+		<title>商品列表</title>
 		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="../tubiao/iconfont.css"/>		
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="../tubiao/iconfont.css"/>
 	</head>
 	<body>
+		<!--顶部导航-->
 		<div class="nav">
 			<div class="nav-top">
 				<h5 id="User">
 					<span>您好 ! 欢迎来到音平商城 ! </span>
 					<span>
-						[<a href="#">请登录</a>丨<a href="#">免费注册</a>]
+						[<a href="login.html">请登录</a>丨<a href="register.html">免费注册</a>]
 					</span>
 				</h5>
 				<ul class="nav-top1">
@@ -197,45 +198,119 @@
 				</div>
 			</div>
 		</div>
-		</div>
-		<div class="center">
+		<!--内容区域-->
+		<div id="center">
+			<!--内容居版心-->
 			<div class="center1">
-				<p class="p1"><!--得胜MX1声卡搭配得胜PC-K220麦克风 电脑手机K歌直播套装 抖音快手全民K歌唱歌设备全套--></p>
-				<div class="box">
-					<div class="small">
-						<!--<img src="../img2/a (3).jpg"/>-->						
-						<div class="mask"></div>
-					</div>
-						<!--<img src="../img2/a (3).jpg" class="bigimg"/>-->						
-					<div class="big">
-					</div>
+				<!--这个span是佛祖保佑-->
+				<span class="fouzhu">&nbsp;</h3>
+				<div class="title-x">
+					<a href="index.html">首页</a><span class="Nextspan">></span><span class="t-box"> </span>
 				</div>
-				<div class="content">
-					<p class="p2"><!--得胜MX1声卡搭配得胜PC-K220麦克风 电脑手机K歌直播套装 抖音快手全民K歌唱歌设备全套--></p>
-					<div class="pause">
-						<div class="money">
-							<span class="s1">优惠价</span>
-							<span class="s9"><em>¥</em><!--1269.00--></span><br />
-							<span class="s3">会员专享</span>
-							<span class="s4">您有0积分可用，至少可省0.00元</span>
-						</div>
-						<div class="haoping">
-							<p class="p3">好评度97%</p>
-							<p>2275人评价</p>
-							<p>430人晒单</p>
-						</div>
-						<div class="youhui">
-							<h4><span class="s5">优惠</span><span class="s6">限时</span>已优惠<span>¥112.00</span></h4>
-							<h4><span class="s5">促销</span><span class="s6">满送</span>全场k歌设备满3000元赠送价值350元精调>></h4>
-							<h4><span class="s7">领劵</span>得胜、莱维特品牌爆款单品领劵立减100元>></h4>
-							<h4><span class="s7">立减</span>小程序下单立减5元>></h4>	
-							<h4><span class="s5">配送</span><span class="s8">现货 ， 21:00前完成下单当天发货，预计1-3天送达 现在下单，立享满99元包邮</span></h4>
-						</div>
-						<div class="anniu">
-							<input type="button" value="立即购买" class="btn1"/>
-							<input type="button" value="加入购物车" class="btn2"/>
-						</div>
+				<div class="title-1">
+					<span class="t-box"> </span>
+				</div>
+				<div class="classification">
+					<dl class="money-x">
+						<dt>价格：</dt>
+						<dd>0-499</dd>
+						<dd>500-999</dd>
+						<dd>1000-1999</dd>
+						<dd>2000以上</dd>
+					</dl>
+					<input type="text"  class="x-replay-text1"/><span class="gan">－</span><input type="text"  class="x-replay-text2"/><span class="qued">确定</span>
+				</div>
+				<div class="Best-Sellers">
+					<ul>
+						<li>
+							<img src="../img/xc1.jpg"/>
+							<p>惠威(HiVi) D3.2MKII 家庭影院音响 5.0环绕音箱套装</p>
+							<h3>¥<span>8499.00</span></h3>
+							<a href="page.html?id=shop60">立即抢购</a>
+						</li>
+						<li>
+							<img src="../img/xc2.jpg"/>
+							<p>JBL Studio 5系列 5.1 家庭影院 580 主音箱 （棕红色）</p>
+							<h3>¥<span>17699.00</span></h3>
+							<a href="page.html?id=shop61">立即抢购</a>
+						</li>
+						<li>
+							<img src="../img/xc3.jpg"/>
+							<p>哈曼卡顿(Harman Kardon) HKTS 30BQ 5.1家庭影院音响</p>
+							<h3>¥<span>5888.00</span></h3>
+							<a href="page.html?id=shop62">立即抢购</a>
+						</li>
+					</ul>
+					<img src="../img/rmtj.png" class="rmtj"/>
+				</div>
+				<div id="nav">
+					<div class="Sell-well">
+						<ul>
+							<h2>一周热销排行</h2>
+							<li>
+								<a href="page.html?id=shop63">
+									<img src="../img/xc4.jpg"/>
+									<p>惠威(HiVi) Diva 6.3HT家庭影院 钢琴烤漆 （五件套）</p>
+									<h3>¥<span>8999.00</span></h3>
+								</a>
+							</li>
+							<li>
+								<a href="page.html?id=shop61">
+									<img src="../img/xc2.jpg"/>
+									<p>JBL Studio 5系列 5.1 家庭影院 580 主音箱 （棕红色）</p>
+									<h3>¥<span>17699.00</span></h3>
+								</a>
+							</li>
+							<li>
+								<a href="page.html?id=shop64">
+									<img src="../img/xc5.jpg"/>
+									<p>JBL Studio 5系列 5.1 家庭影院 520C 中置（棕红色）</p>
+									<h3>¥<span>5099.00</span></h3>
+								</a>
+							</li>
+							<li>
+								<a href="page.html?id=shop65">
+									<img src="../img/xc6.jpg"/>
+									<p>惠威(HiVi) Diva5.0 家庭影院音响套装5.1环绕hifi组合木质音箱</p>
+									<h3>¥<span>3999.00</span></h3>
+								</a>
+							</li>
+							<li>
+								<a href="page.html?id=shop66">
+									<img src="../img/xc7.jpg"/>
+									<p>哈曼卡顿(Harman Kardon) HKTS 30BQ 5.1家庭影院音响</p>
+									<h3>¥<span>5888.00</span></h3>
+								</a>
+							</li>
+						</ul>
 					</div>
+					<div class="List-of-Goods">
+						<div class="Cant-find" style="display: none;">
+							<span class="Caution">!</span>
+							<h4>
+								<span>没有找到与"<span class="Caution1">胡query</span>"相关的商品,</span>
+								<span>请修改关键字后再试。</span>
+							</h4>									
+						</div>
+						<ul class="List-of">							
+							<!--<li>
+								<b><img src="../img/xc8.jpg"/></b>
+								<h3>¥<span>5888.00</span></h3>
+								<p>哈曼卡顿(Harman Kardon) HKTS 30BQ 5.1家庭影院音响</p>
+								<div class="x-alltime">
+									<span class="Number-1">1</span>
+									<span class="up">∧</span>
+									<span class="down">∨</span>
+									<input type="button" value="加入购物车" class="btn2"/>
+									<div class="Collection">
+										<span>♡</span>
+										<h2>收藏</h2>
+									</div>									
+								</div>
+							</li>-->		
+						</ul>
+					</div>	
+					<h6></h6><!--这个h6用于清除浮动 避免高度塌陷 勿添加内容 -->
 				</div>
 			</div>
 		</div>
@@ -248,7 +323,7 @@
 						<li><img src="../img/g (5).png"/><span>正品保障</span></li>
 						<li><img src="../img/g (1).png"/><span>闪电发货</span></li>
 						<li><img src="../img/g (2).png"/><span>货到付款</span></li>
-						<li><img src="../img/g (3).png"/><span>七天退换</span></li>
+						<li><img src="../img/g (4).png"/><span>七天退换</span></li>
 						<li><img src="../img/g (4).png"/><span>售后无忧</span></li>
 					</ul>
 				</div>
@@ -428,6 +503,6 @@
 		</div>
 	</body>
 </html>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/index.js"></script>
-<script src="../js/page.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script> 
+<script src="../js/index.js"></script>																				
+<script src="../js/list.js"></script>											
