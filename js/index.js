@@ -174,10 +174,17 @@ window.onload = function(){
 			location.href = "list.html"
 			localStorage.setItem("Search",m)
 		})
+		//楼层小标题点击跳转
 		$(".Head-Title p span").click(function(){
 			var n = $(this).html()
 			location.href = "list.html"
 			localStorage.setItem("Search",n)
+		})
+		//搜索框下方标题点击跳转
+		$(".header-t1 ol li span").click(function(){
+			var x = $(this).html()
+			location.href = "list.html"
+			localStorage.setItem("Search",x)
 		})
 	}
 	//选项卡效果

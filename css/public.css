@@ -253,7 +253,8 @@ h6 {
   float: left;
   font-size: 12px;
   margin-right: 10px;
-  color: #666; }
+  color: #666;
+  cursor: pointer; }
 
 .header .header-t .header-t1 ol li img {
   margin: -6px 0 0 2px; }
