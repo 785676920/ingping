@@ -166,6 +166,20 @@ window.onload = function(){
 			}
 		})
 	}
+	//二级导航点击跳转
+	Navigation();
+	function Navigation(){
+		$("#Navigation li a").click(function(){
+			var m = $(this).html()
+			location.href = "list.html"
+			localStorage.setItem("Search",m)
+		})
+		$(".Head-Title p span").click(function(){
+			var n = $(this).html()
+			location.href = "list.html"
+			localStorage.setItem("Search",n)
+		})
+	}
 	//选项卡效果
 	information();
 	function information(){
@@ -203,7 +217,6 @@ window.onload = function(){
 			$("#sidebar").animate({right:0},500)
 		})
 	}
-	export
 	//侧边栏购物车内显示添加至购物车的商品
 	Show();
 	function Show(){

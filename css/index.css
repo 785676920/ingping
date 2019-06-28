@@ -30,7 +30,8 @@ h1, h2, h3, h4, h5, h6 {
     top: 14px;
     font-size: 12px; }
     .Head-Title p span {
-      color: #333; }
+      color: #333;
+      cursor: pointer; }
       .Head-Title p span:hover {
         color: #f60; }
     .Head-Title p em {

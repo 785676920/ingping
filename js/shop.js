@@ -138,6 +138,7 @@
 			m+=Number($(this).parent().find(".num1").html())
 			n+=Number($(this).parent().find(".num").html())
 		})
+		$(".span-3").html(m)
 		$(".span-2").html(m)
 		$(".span-1").html(n)
 	}
