@@ -71,7 +71,7 @@ function Shop(){
 			arr = JSON.parse(str)
 			for( var i = 0 ; i < arr.length ; i++ ){
 				if( arr[i].id == json.id ){
-					arr[i].count++
+					arr[i].count+=count
 					flag = false
 					break;
 				}
