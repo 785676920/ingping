@@ -1,3 +1,62 @@
+//显示购物车商品数量
+Num();
+function Num(){
+	var num = 0
+	var str = localStorage.getItem("shop")
+	if( str == null ){
+		return;
+	}
+	var arr = JSON.parse(str)
+	for( var i = 0 ; i < arr.length ; i++ ){
+		num+=arr[i].count
+	}
+	$(".span-m").html(num)
+}
+//侧边栏购物车内显示添加至购物车的商品
+Show();
+function Show(){
+	var str = localStorage.getItem("shop")
+	if( str == null ){
+		return;
+	}
+	var arr = JSON.parse(str)
+	var stra = ""
+	var deff = $.ajax({
+		type:"get",
+		url:"data.json",
+		async:true
+	});
+	deff.done(function(res){
+		for( var i = 0 ; i < arr.length ; i++ ){
+			for( var attr in res ){
+				if( arr[i].id == res[attr].id ){
+					stra+=`<div class="shopCart_box">
+						<input type="checkbox" class="ck2"/>
+						<img src="../img/${res[attr].src}"/>
+						<p pid=${arr[i].id} >${res[attr].Title}</p>
+						<h4>¥<span class="ss1">${res[attr].money}</span></h4>
+						<h5>${arr[i].count}</h5>
+					</div>`
+					break;
+				}
+			}
+		}
+		$(".list").html(stra)
+		//跳转至购物车时 判断商品选择状态
+		$(".shopa").click(function(){
+			$(".ck2:checked").each(function(){
+				var id = $(this).parent().find("p").attr("pid")
+				for( var i = 0 ; i < arr.length ; i++ ){
+					if( arr[i].id == id ){
+						arr[i].ck = "checked"
+						localStorage.setItem("shop",JSON.stringify(arr))
+						break
+					}
+				}
+			})
+		})
+	})
+}
 window.onload = function(){
 	//判断是否有cookie 
 	Cook();
@@ -196,20 +255,6 @@ window.onload = function(){
 			$(".Header-information-2").children("ol").eq($index).css("display","block").siblings().css("display","none")
 		})
 	}
-	//显示购物车商品数量
-	Num();
-	function Num(){
-		var num = 0
-		var str = localStorage.getItem("shop")
-		if( str == null ){
-			return;
-		}
-		var arr = JSON.parse(str)
-		for( var i = 0 ; i < arr.length ; i++ ){
-			num+=arr[i].count
-		}
-		$(".span-m").html(num)
-	}
 	//购物车运动 移入移出
 	Shopmove();
 	function Shopmove(){
@@ -222,51 +267,6 @@ window.onload = function(){
 		})
 		$(".no").click(function(){
 			$("#sidebar").animate({right:0},500)
-		})
-	}
-	//侧边栏购物车内显示添加至购物车的商品
-	Show();
-	function Show(){
-		var str = localStorage.getItem("shop")
-		if( str == null ){
-			return;
-		}
-		var arr = JSON.parse(str)
-		var str1 = ""
-		var deff = $.ajax({
-			type:"get",
-			url:"data.json",
-			async:true
-		});
-		deff.done(function(res){
-			for( var i = 0 ; i < arr.length ; i++ ){
-				for( var attr in res ){
-					if( arr[i].id == res[attr].id ){
-						str1+=`<div class="shopCart_box">
-							<input type="checkbox" class="ck2"/>
-							<img src="../img/${res[attr].src}"/>
-							<p pid=${arr[i].id} >${res[attr].Title}</p>
-							<h4>¥<span class="ss1">${res[attr].money}</span></h4>
-							<h5>${arr[i].count}</h5>
-						</div>`
-						break;
-					}
-				}
-			}
-			$(".list").append(str1)
-			//跳转至购物车时 判断商品选择状态
-			$(".shopa").click(function(){
-				$(".ck2:checked").each(function(){
-					var id = $(this).parent().find("p").attr("pid")
-					for( var i = 0 ; i < arr.length ; i++ ){
-						if( arr[i].id == id ){
-							arr[i].ck = "checked"
-							localStorage.setItem("shop",JSON.stringify(arr))
-							break
-						}
-					}
-				})
-			})
 		})
 	}
 	//购物车功能实现
@@ -352,5 +352,4 @@ window.onload = function(){
 			}
 		})
 	}
-	
 }

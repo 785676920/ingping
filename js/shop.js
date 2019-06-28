@@ -98,10 +98,10 @@
 						$(this).parent().parent().find(".num1").html(Number($(this).parent().parent().find(".xj").html())*arr[i].count)
 						//调用结算函数
 						Settlement();
-						//改变购物车商品显示数量
-						Num();
 						//将改变后的数组存入localStorage中
 						localStorage.setItem("shop",JSON.stringify(arr))
+						//改变购物车商品显示数量
+						Num();
 					}
 				}
 			}
@@ -115,21 +115,13 @@
 					$(this).parent().find(".num").html(arr[i].count)
 					$(this).parent().parent().find(".num1").html(Number($(this).parent().parent().find(".xj").html())*arr[i].count)
 					Settlement();
-					Num();
 					localStorage.setItem("shop",JSON.stringify(arr))
+					Num();
 				}
 			}
 		})
 	}
-	//显示购物车商品数量
-	Num();
-	function Num(){
-		var num = 0
-		for( var i = 0 ; i < arr.length ; i++ ){
-			num+=arr[i].count
-		}
-		$(".span-m").html(num)
-	}
+	
 	//结算功能
 	function Settlement(){
 		var m = 0 //总数量

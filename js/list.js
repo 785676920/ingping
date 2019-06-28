@@ -82,6 +82,7 @@ function Shop(){
 		}
 		localStorage.setItem("shop",JSON.stringify(arr))
 		Num();//调用函数改变购物车数量
+		Show();//侧边栏购物车内显示添加至购物车的商品
 	})
 }
 //商品列表功能实现
@@ -109,15 +110,3 @@ function Shopping(){
 	})
 }
 
-//显示购物车商品数量
-Num();
-function Num(){
-	var num = 0
-	var str = localStorage.getItem("shop")
-	var arr = JSON.parse(str)
-	for( var i = 0 ; i < arr.length ; i++ ){
-		num+=arr[i].count
-	}
-	$(".span-m").html(num)
-}
-//购物车内显示添加至购物车的商品
